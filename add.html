@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>intern</title>
+     <meta charset="utf-8">
+     <script async="async" src="https://www.google.com/adsense/search/ads.js"></script>
+<script type="text/javascript" charset="utf-8">
+(function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
+  arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
+</script>
+  
+<script>
+  
+</script>
+    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+        if(clicks % 5==0 || clicks % 10 == 0)
+        {
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5091444114550563",
+            enable_page_level_ads: true
+        });
+      document.getElementById("clickz").disabled = true;
+      document.getElementById("afscontainer1").style.display = "block";
+      document.getElementById("myModal").style.display="block";
+      document.getElementById("mainrole").active =true;
+      document.getElementById("mainrole").click(); 
+      document.getElementById("info").style.display = "block";
+      var myVar = setTimeout( "freeze()", 10000);
+         }
+        else
+        {
+          document.getElementById("afscontainer1").style.display = "none"; 
+        }
+      };
+     function freeze(){
+      document.getElementById("clickz").disabled= false; 
+      document.getElementById("afscontainer1").style.display = "none";  
+      document.getElementById("info").style.display = "none";
+      document.getElementById("mainrole").click(); 
+      document.getElementById("myModal").style.display="none";
+      document.getElementById("clickz").disabled= false;
+        }
+    </script>
+    
+</head>
+
+<body>
+<div class="modal fade" id="myModal" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+          <h4 class="modal-title">Google Ads</h4>
+        </div>
+        <div class="modal-body">
+          <div id='afscontainer1'></div>
+        </div>
+        <div class="modal-footer">
+         
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+            <script type="text/javascript" charset="utf-8">
+   var pageOptions = {
+    "pubId": "pub-9616389000213823", 
+    "query": "hotels",
+    "adPage": 1
+  };
+  var adblock1 = {
+    "container": "afscontainer1",
+    "number": 1
+  };
+  _googCsa('ads', pageOptions, adblock1);
+</script>
+  <div class="container" id="bottom-div">
+      <center>
+      <button id="mainrole" data-toggle="modal" data-target="#myModal" style="display: none" data-backdrop="false" data-keyboard="false"></button>
+    <button type="button" class="btn btn-default btn-circle btn-lg" id="clickz"onClick="onClick()" ><i class="glyphicon glyphicon-ok">CLICK ME TO INCREASE THE COUNT </i></button><br><br><br>
+    <span id="info" style="display: none">WAIT 10sec</span>
+    <p>Count: <a id="clicks">0</a></p>
+
+      </center>
+      </div>
+    
+</body>
+</html>
